@@ -23,14 +23,14 @@ console.log(valor);
 
 /* ------------------------------------ */
 
-let valor = 20;
+let valor1 = 20;
 
 function incrementa () {
-    valor++;
+    valor1++;
 }
 
 incrementa() //chamando a função, faz o cálcula e guarda
-console.log(valor); // mostra o novo valor de'valor'
+console.log(valor1); // mostra o novo valor de'valor'
 
 
 // Função com Parâmetros (s)
@@ -63,3 +63,14 @@ function soma (n1, n2) {
 }
 
 console.log(meusNumeros);
+
+
+// Função Arrow - Forma moderna de escrever função
+
+const multi = (n1, n2) => {
+    const multiplicação = n1 * n2;
+    return multiplicação;
+}
+
+const multiplicar = multi(2,5);
+console.log(multiplicar);
